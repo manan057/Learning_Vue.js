@@ -1,0 +1,6 @@
+new Vue ==> new view instance. core of each core of view application that vue is used in.
+Controls their own template of html code.
+You can access all the properities and maplets using this
+
+el: '#id'
+v-on: listen to event
