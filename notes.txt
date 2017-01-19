@@ -4,3 +4,8 @@ You can access all the properities and maplets using this
 
 el: '#id'
 v-on: listen to event
+
+curly braces only works on text not html elements like img, a href, etc
+instead of h-ref="{{link}}"; use v-bind:href="link"
+
+Vue.js automatically fetches arguments
