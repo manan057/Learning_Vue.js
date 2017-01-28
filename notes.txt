@@ -9,3 +9,27 @@ curly braces only works on text not html elements like img, a href, etc
 instead of h-ref="{{link}}"; use v-bind:href="link"
 
 Vue.js automatically fetches arguments
+
+* Synchronous *
+Everything you use from computed method can be used as properties
+Things in computed doesn't get executed everytime
+-- computed caches the result
+Use computed when you can
+
+* Asynschronous *
+To react to every change or to use async tasks
+watch only happens after a specific trigger
+eg. api call
+
+call back closures can't access propertities so you have to store them in varibales
+right before the functions
+eg. var vm = this;
+    setTimeout(function() {
+      //closure
+      vm.counter = 0;
+    }, 2000);
+
+
+#Shortcuts
+v-on:click ==> @click
+v-bind:href ==> :href
