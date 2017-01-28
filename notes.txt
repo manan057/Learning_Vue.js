@@ -33,3 +33,9 @@ eg. var vm = this;
 #Shortcuts
 v-on:click ==> @click
 v-bind:href ==> :href
+
+use <template> to group html elements and show/toggle
+v-if is used by deafult and is better performance wise
+v-if: completely detaches or detaches elements in the dom
+v-show: only hides or shows the elements in the dom. the elements stay in the dom
+For sorting use v-bind or :key="something" where something can be an index or at unique string itself
