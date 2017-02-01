@@ -39,3 +39,14 @@ v-if is used by deafult and is better performance wise
 v-if: completely detaches or detaches elements in the dom
 v-show: only hides or shows the elements in the dom. the elements stay in the dom
 For sorting use v-bind or :key="something" where something can be an index or at unique string itself
+
+Vue instances can be accessed from outside. So they are muttable.
+#Just make sure you assign them to variables
+
+$el: referes to our native html elemet/template
+$data: holds data properities
+this.$refs.myButton.innerText == "Blah" will change the name
+  --> can modify properties of objects $refs
+
+Vue Api ==> allows you to modify properties from outside the object
+$mount is the same as the el property eg: vm1.$mount('#app1')
