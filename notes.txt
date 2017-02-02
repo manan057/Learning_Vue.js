@@ -50,3 +50,16 @@ this.$refs.myButton.innerText == "Blah" will change the name
 
 Vue Api ==> allows you to modify properties from outside the object
 $mount is the same as the el property eg: vm1.$mount('#app1')
+
+Global component ==> Vue.component('name', {});
+Local component ==> var = {} which is a object instance then
+You have to declare the component in the Vue instance like so:
+  new Vue({
+    el: '#app1',
+    components: {
+      'name-of-html-tag': var
+    }
+  })
+
+data object must be a function that returns a n object
+#wrap all the html elements in a div if you use <template>
