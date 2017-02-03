@@ -2,7 +2,11 @@ new Vue ==> new view instance. core of each core of view application that vue is
 Controls their own template of html code.
 You can access all the properities and maplets using this
 
-el: '#id'
+el: connect to dom
+data: store data to be used
+methods: methods of this vue instance
+computed: dependent properties
+watch: execute code upon data changes
 v-on: listen to event
 
 curly braces only works on text not html elements like img, a href, etc
