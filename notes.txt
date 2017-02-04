@@ -68,3 +68,10 @@ You have to declare the component in the Vue instance like so:
 data object must be a function that returns a n object
 #wrap all the html elements in a div if you use <template>
 <style scoped> ==> style will only be applied in the current file otherwise the style are defined globally
+
+### Vue CLI ###
+Generate project files:
+  vue-cli webpack-simple <folder_name>
+  cd folder_name
+  npm intsall
+  npm run dev
