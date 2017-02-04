@@ -34,7 +34,7 @@ eg. var vm = this;
     }, 2000);
 
 
-#Shortcuts
+### Shortcuts ###
 v-on:click ==> @click
 v-bind:href ==> :href
 
