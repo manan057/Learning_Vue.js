@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>VueJS</title>
+    <script src="../dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <my-cmp></my-cmp>
+      <hr>
+      <my-cmp></my-cmp>
+    </div>
+    <script>
+      Vue.component('my-cmp', {
+        data: function() {
+          return {
+            status: 'Critical'
+          };
+        },
+        template: '<p>Server status: {{ status }} (<button @click="changeStatus">Click</button>)</p>',
+        methods: {
+          changeStatus: function() {
+            this.status = 'Normal';
+          }
+        }
+      });
+
+      new Vue({
+        el: '#app'
+      })
+    </script>
+  </body>
+</html>
